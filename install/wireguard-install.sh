@@ -37,7 +37,7 @@ pivpnHOST=
 pivpnPERSISTENTKEEPALIVE=25
 UNATTUPG=1
 EOF
-$STD bash <(curl -fsSL https://install.pivpn.io) --unattended options.conf
+$STD bash <(curl -fsSL https://raw.githubusercontent.com/pivpn/pivpn/master/auto_install/install.sh) --unattended options.conf
 msg_ok "Installed WireGuard"
 
 motd_ssh
